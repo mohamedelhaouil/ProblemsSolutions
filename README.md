@@ -1,2 +1,2 @@
 # ProblemsSolutions
-Solutions of some Cf, Uva, Cses problems
+Solutions of some CF, UVA, CSES problems
