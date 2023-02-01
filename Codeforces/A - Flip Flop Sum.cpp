@@ -29,7 +29,7 @@ const ll MOD = ll(1e9 + 7), INF = ll(1e9 + 7);
 int dx[] = {0, 0, 1, -1, 1, -1, 1, -1};
 int dy[] = {1, -1, 0, 0, -1, 1, 1, -1};
 void solve() {
-	int n, s = 0, Neq = 0, Peq = 0, diff = 0;
+	int n, s = 0;
 	cin >> n;
 	vector<int> v(n);
 	for(int i = 0; i < n; i++) {
