@@ -45,7 +45,7 @@ void solve() {
 	int a = 0;
 	for(int i = 0; i < n; i++) {
 		if(v[i] == 2) a++;
-		if (a == cnt/2) {
+		if (a == cnt / 2) {
 			cout << i + 1 << endl;
 			return;
 		}
