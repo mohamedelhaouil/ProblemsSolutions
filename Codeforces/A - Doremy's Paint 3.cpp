@@ -30,7 +30,30 @@ const ll MOD = ll(1e9 + 7), INF = ll(1e9 + 7);
 int dx[] = {0, 0, 1, -1, 1, -1, 1, -1};
 int dy[] = {1, -1, 0, 0, -1, 1, 1, -1};
 void solve() {
-  
+  int n;
+  cin >> n;
+  vector<int> v(n);
+  for(int i = 0; i < n; i++) {
+    cin >> v[i];
+  }
+  sort(all(v));
+  if(v[0] == v[n - 1]) {
+    cout << "YES" << endl;
+  }
+  else {
+    int a = 0, b = 0;
+    int x = v[0], y = v[n - 1];
+    for(int i = 0; i < n; i++) {
+      if(v[i] == x) a++;
+      if(v[i] == y) b++;
+    }
+    if(a + b == n && (a == b || a == b - 1 || a == b + 1)) {
+      cout << "YES" << endl;
+    }
+    else {
+      cout << "NO" << endl;
+    }
+  }
 }
 int main () {
   ios_b();
