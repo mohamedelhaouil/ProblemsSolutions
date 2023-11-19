@@ -39,22 +39,18 @@ void solve() {
     cout << 0 << endl;
     return;
   }
-  int cnt = 0, cntt = 0;
+  int cnt = 0;
   for(int i = 0; i < n; i++) {
     if(s[i] == 'B') cnt++;
-    if(a > k) {
-      if(a - cnt == k) {
-        cout << 1 << endl;
-        cout << i + 1 << " A" << endl;
-        return;
-      }
+    if(a - cnt == k) {
+      cout << 1 << endl;
+      cout << i + 1 << " A" << endl;
+      return;
     }
-    else {
-      if(a + i + 1 - cnt == k) {
-        cout << 1 << endl;
-        cout << i + 1 << " B" << endl;
-        return;
-      }
+    if(a + i + 1 - cnt == k) {
+      cout << 1 << endl;
+      cout << i + 1 << " B" << endl;
+      return;
     }
   }
 }
